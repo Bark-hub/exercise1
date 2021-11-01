@@ -18,22 +18,32 @@
                 "height": 100
               },
               "position": {
-                "x": 294,
+                "x": 295,
                 "y": 179
               },
               "angle": 0,
               "id": "ee97f46e-328d-4785-8fe8-036feef2f13b",
               "z": 1,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "DDOS",
+                  "type": "Denial of service",
+                  "description": "Overloading a system with numerous requests, making it impossible for legitimate user to connect.",
+                  "mitigation": "Pre-prepare a static version of a website that requires minimal processing and bandwidth in order to facilitate continuity of service when under denial-of-service attacks.\n\nThe goal of DDOS attacks is to disrupt so it's best to manage the damage."
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Web Server"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -45,21 +55,31 @@
               },
               "position": {
                 "x": 26,
-                "y": 148
+                "y": 147
               },
               "angle": 0,
               "id": "f4e5a617-77b0-4275-8e54-db4246eb9ffd",
               "z": 2,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Spoofing",
+                  "description": "When someone claims to be a person or system they are not.",
+                  "mitigation": "Two Factor authentication",
+                  "type": "Spoofing"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "User/Browser"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
